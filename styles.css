@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body, h1, p {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -26,16 +31,27 @@ nav {
 }
 
 .logo-text {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: #FF5733;
+    text-decoration: none;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: #FF5733;
     font-size: 16px;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s ease-in-out;
 }
 
 .nav-links li a:hover {
@@ -49,4 +65,29 @@ nav {
     border-radius: 25px;
     padding: 5px;
     max-width: 400px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    width: 80%;
+}
+
+.search-button, .clear-button {
+    border: none;
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.search-button:hover, .clear-button:hover {
+    background-color: #FFC300;
 }
