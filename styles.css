@@ -169,6 +169,41 @@ nav {
     width: 40px;
 }
 
+#about-us, #meet-our-team {
+    padding: 40px;
+    margin: 20px 0;
+    color: white;
+}
+
+#meet-our-team {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
@@ -186,5 +221,18 @@ nav {
     .social-icon {
         width: 30px;
     }
-}
 
+    #meet-our-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    .team-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
