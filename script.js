@@ -12,7 +12,7 @@ fetch('travel_recommendation_api.json')
         console.error('There was a problem with the fetch operation', error);
     });
 
-    const searchInput = document.querySelector('.search-bar-input');
+    const searchInput = document.querySelector('search-input');
     const searchButton = document.querySelector('.search-button');
     const clearButton = document.querySelector('.clear-button');
 
@@ -21,7 +21,7 @@ fetch('travel_recommendation_api.json')
 
         console.log('User Input:', userInput);
 
-        handleSearch(userInput);
+        displayRecommendations(data, userInput);
     });
 
     clearButton.addEventListener('click', function() {
@@ -29,3 +29,13 @@ fetch('travel_recommendation_api.json')
 
         clearResults();
     })
+
+    .catch(error => {
+        console.error('There was a problem with the fetch operation', error);
+    });
+
+
+
+    function displayRecommendations(data, inputValue) {
+
+    }
